@@ -94,8 +94,8 @@ h5 {
 /* pageheader*/
 
 #page-header {
-    background-image: url("../images/my-work/work-main.png");
-    padding-top: 70px;
+       background-image: url("../images/my-work/work-main.png");
+    position: relative;
     width: 100vw;
     background-size: cover;
     background-position: center center;
@@ -103,7 +103,7 @@ h5 {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    height: calc(100vh - 70px);
+    height: 100vh;
 }
 
 #page-header #header-content {
