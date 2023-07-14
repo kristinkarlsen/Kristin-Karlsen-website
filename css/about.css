@@ -115,14 +115,15 @@ h6 {
 
 #page-header {
     background-image: url("../images/about/about-main.png");
-    height: 100vh;
+position: relative;
     width: 100vw;
-    padding-top: 70px;
     background-size: cover;
     background-position: center center;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    height: 100vh;
 }
 
 #page-header #header-content {
