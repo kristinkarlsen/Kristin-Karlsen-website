@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 1.5em;
+    background: white;
+    color: black;
+}
+
+
+/*Main Manu*/
+
+#main-menu {
+    background-color: white;
+    height: 70px;
+    position: fixed;
+    z-index: 1;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    z-index: 2;
+}
+
+#kristin-logo {
+    margin-left: 50px;
+    color: black;
+}
+
+#kristin-logo a {
+    text-decoration: none;
+    color: black;
+}
+
+#main-menu .nav-items {
+    display: flex;
+    margin-right: 50px;
+}
+
+.nav-items .current {
+    list-style-type: none;
+    margin: 20px;
+}
+
+#main-menu .nav-items a:hover {
+    text-decoration: underline;
+}
+
+#main-menu .nav-items a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/*headlines*/
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-family: 'Audiowide', sans-serif;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+h3 {
+    font-family: 'Audiowide', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+h4 {
+    font-family: 'Audiowide', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+}
+
+h5 {
+    text-transform: capitalize;
+    font-size: 1rem;
+    text-decoration: underline;
+    margin-top: 10px;
+}
+
+/* pageheader*/
+
+#page-header {
+    background-image: url("../images/my-work/work-main.png");
+    padding-top: 70px;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#page-header #header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-text {
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    font-family: 'Bebas Neue', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+
+/*projects carousel*/
+
+#projects {
+    margin: 150px 15%;
+}
+
+#carousel-section {
+    overflow: hidden;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100vw;
+    height: 400px;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 1s ease;
+}
+
+.carousel-image {
+    height: 300px;
+    width: 500px;
+    object-fit: cover;
+    margin: 0 60px;
+    transition: transform 0.5s ease;
+}
+
+.arrow {
+    position: absolute;
+    top: 95%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.arrow-left {
+    left: 30px;
+    transform: translate(-50%, -50%);
+}
+
+.arrow-right {
+    right: 30px;
+    transform: translate(50%, -50%);
+}
+
+.active {
+    transform: scale(1.3);
+    z-index: 1;
+}
+
+.dots-container {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #555;
+}
+
+
+/*footer*/
+
+#page-footer {
+    display: flex;
+    justify-content: center;
+    padding-top: 150px;
+}
+
+#page-footer>div {
+    width: 70%;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.some img {
+    height: 25px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+}
+
+#back-to-top {
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: black;
+}
+
+#back-to-top:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+/* Animation transition */
+.reveal {
+    width: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+@media screen and (max-width: 600px) {
+    .carousel-image {
+        height: 180px;
+        width: 300px;
+    }
+
+    .carousel-container {
+        height: 260px;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    .header-text {
+        margin-bottom: 15px;
+    }
+
+    #projects {
+        margin: 80px 15% 100px;
+    }
+
+    #page-footer {
+        padding-top: 100px;
+    }
+
+    .some img {
+        height: 20px;
+        margin-top: 2px;
+    }
+
+    #page-footer>div {
+        width: 80%;
+    }
+
+    #back-to-top {
+        font-size: smaller;
+    }
+
+    h4 {
+        font-size: 0.9rem;
+    }
+
+    #kristin-logo {
+        display: none;
+    }
+
+    #main-menu .nav-items {
+        width: 100%;
+        justify-content: center;
+        margin-right: 0;
+    }
+
+    .current>a {
+        font-size: 0.8rem;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+    #main-menu .nav-items {
+        width: 100%;
+        justify-content: center;
+        margin-right: 0;
+    }
+   
+    #kristin-logo {
+        display: none;
+    }
+}

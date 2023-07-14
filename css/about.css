@@ -1,0 +1,391 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 1.5em;
+    background: white;
+    color: black;
+}
+
+/*headlines*/
+
+h1 {
+    font-size: 5rem;
+    font-weight: 300;
+}
+
+h2 {
+    font-family: 'Audiowide', sans-serif;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+h3 {
+    font-family: 'Audiowide', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+h4 {
+    font-family: 'Audiowide', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+}
+
+h6 {
+    font-size: 22px;
+    font-weight: 100;
+    text-decoration: underline;
+    padding-bottom: 15px;
+    color: white;
+}
+
+/*Main Manu*/
+
+#main-menu {
+    background-color: white;
+    height: 70px;
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    z-index: 2;
+}
+
+#kristin-logo {
+    margin-left: 50px;
+    color: black;
+}
+
+#kristin-logo a {
+    text-decoration: none;
+    color: black;
+}
+
+#main-menu .nav-items {
+    display: flex;
+    margin-right: 50px;
+}
+
+.nav-items .current {
+    list-style-type: none;
+    margin: 20px;
+}
+
+#main-menu .nav-items a:hover {
+    text-decoration: underline;
+}
+
+#main-menu .nav-items a {
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    min-width: 160px;
+    z-index: 1;
+  }
+  
+  .dropdown-content button {
+    color: black;
+    padding: 8px 10px;
+    margin-top: 5px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+/* pageheader*/
+
+#page-header {
+    background-image: url("../images/about/about-main.png");
+    height: 100vh;
+    width: 100vw;
+    padding-top: 70px;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#page-header #header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-text {
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    font-family: 'Bebas Neue', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+/*buttons*/
+
+.buttons {
+    font-family: 'Montserrat', sans-serif;
+    padding: 8px 13px;
+    border-radius: 10px;
+    border: 1px solid rgb(38, 150, 255);
+    background-color: white;
+    color: black;
+    width: fit-content;
+}
+
+.buttons:hover {
+    background-color: rgb(38, 150, 255);
+    color: white;
+    cursor: pointer;
+}
+
+.buttons a {
+    color: inherit;
+    text-decoration: none;
+    font-family: inherit;
+}
+
+
+/*biography*/
+
+#biography {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-me-container {
+    display: flex;
+    max-width: 70%;
+    height: max-content;
+    align-items: center;
+}
+
+#me {
+    width: 400px;
+}
+
+.info-text-bio {
+    margin-bottom: 15px;
+    padding-right: 40px;
+}
+
+/*resume*/
+
+#resume {
+    background-image: url("../images/about/about-2.png");
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#resume-container {
+    display: flex;
+    max-width: 70%;
+    margin-left: 15%;
+}
+
+#experience-text-wrapper {
+    width: 50%;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#education-text-wrapper {
+    width: 50%;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.info-text {
+    color: white;
+    font-size: 16px;
+}
+
+.year {
+    font-size: 0.7rem;
+    margin-bottom: -5px;
+}
+
+.uni {
+    font-size: 0.7rem;
+    font-weight: bold;
+    margin-bottom: -5px;
+}
+
+#paragraph2 {
+    padding-top: 30px;
+}
+
+.space {
+    padding-top: 15px;
+}
+
+
+
+/*footer*/
+
+#page-footer {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+#page-footer>div {
+    width: 70%;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.some img {
+    height: 25px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+}
+
+#back-to-top {
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+}
+
+#back-to-top:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+/* Animation transition */
+.reveal {
+    width: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+@media screen and (max-width: 1000px) {
+    #about-me-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #me {
+        margin-top: 30px;
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #about-me-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #me {
+        margin-top: 60px;
+        width: 250px;
+    }
+
+    #info-text-bio-wrapper {
+        width: 100%;
+    }
+
+    .info-text-bio {
+        padding-right: 0;
+    }
+
+    #resume-container {
+        display: flex;
+        max-width: 90%;
+        margin-left: 5%;
+    }
+
+    #experience-text-wrapper {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #education-text-wrapper {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #header-img {
+        width: 100vw;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    .header-text {
+        margin-bottom: 15px;
+    }
+
+    .some img {
+        height: 20px;
+        margin-top: 2px;
+    }
+
+    #page-footer>div {
+        width: 70%;
+    }
+
+    #back-to-top {
+        font-size: smaller;
+    }
+
+    h4 {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    #main-menu .nav-items {
+        width: 100%;
+        justify-content: center;
+        margin-right: 0;
+    }
+
+    #kristin-logo {
+        display: none;
+    }
+}

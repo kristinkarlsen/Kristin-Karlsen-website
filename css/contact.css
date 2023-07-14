@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 1.5em;
+    background: white;
+    color: black;
+}
+
+/*Main Manu*/
+
+#main-menu {
+    background-color: white;
+    height: 70px;
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    z-index: 2;
+}
+
+#kristin-logo {
+    margin-left: 50px;
+    color: black;
+}
+
+#kristin-logo a {
+    text-decoration: none;
+    color: black;
+}
+
+#main-menu .nav-items {
+    display: flex;
+    margin-right: 50px;
+}
+
+.nav-items .current {
+    list-style-type: none;
+    margin: 20px;
+}
+
+#main-menu .nav-items a:hover {
+    text-decoration: underline;
+}
+
+#active-now {
+    font-size: bold;
+}
+
+#main-menu .nav-items a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/*headlines*/
+
+h1 {
+    font-size: 5rem;
+    font-weight: 300;
+}
+
+h2 {
+    font-family: 'Audiowide', sans-serif;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+h3 {
+    font-family: 'Audiowide', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+h4 {
+    font-family: 'Audiowide', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+}
+
+h5 {
+    text-transform: capitalize;
+    font-size: 1rem;
+    text-decoration: underline;
+    margin-top: 10px;
+}
+
+/* pageheader*/
+
+#page-header {
+    background-image: url(../images/contact/contact-background.png);
+    padding-top: 70px;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#page-header #header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-text {
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    font-family: 'Bebas Neue', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+
+/*Hire Me*/
+
+#hire-me {
+    margin: 150px 15%;
+}
+
+#hire-me>p {
+    margin-top: 20px;
+}
+
+#hire-me img {
+    margin-top: 20px;
+    height: 30px;
+}
+
+#hire-me img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/*Image section*/
+
+#image-wrapper {
+    display: flex;
+    justify-content: end;
+}
+
+#geometric-image {
+    width: 100%;
+}
+
+/*Inquiries*/
+
+#form {
+    margin: 0 15%;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+#form>p {
+    margin-top: 20px;
+    text-align: end;
+}
+
+#contactForm {
+    display: grid;
+    grid-gap: 10px;
+    margin-top: 20px;
+    width: 500px;
+}
+
+.form-input {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F1F1F1;
+    border: none;
+    padding: 10px;
+}
+
+.form-input#message {
+    resize: vertical;
+    min-height: 100px;
+}
+
+#submit {
+    background-color: black;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    color: #F1F1F1;
+    text-transform: uppercase;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/*footer*/
+
+#page-footer {
+    display: flex;
+    justify-content: center;
+}
+
+#page-footer>div {
+    width: 70%;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.some img {
+    height: 25px;
+    margin-top: 10px;
+    margin-right: 10px;
+    ;
+    margin-bottom: 50px;
+}
+
+#back-to-top {
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: black;
+}
+
+#back-to-top:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+/* Animation transition */
+.reveal {
+    width: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    .header-text {
+        margin-bottom: 15px;
+    }
+
+    #page-footer {
+        padding-top: 100px;
+    }
+
+    .some img {
+        height: 20px;
+        margin-top: 2px;
+    }
+
+    #page-footer>div {
+        width: 80%;
+    }
+
+    #back-to-top {
+        font-size: smaller;
+    }
+
+    h4 {
+        font-size: 0.9rem;
+    }
+
+    .current>a {
+        font-size: 0.8rem;
+    }
+
+    #hire-me {
+        margin: 100px 10%;
+    }
+
+    #geometric-image {
+        width: 90%;
+    }
+
+    #form {
+        margin: 0 10%;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    #form>p {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #contactForm {
+        display: grid;
+        grid-gap: 10px;
+        margin-top: 20px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    #main-menu .nav-items {
+        width: 100%;
+        justify-content: center;
+        margin-right: 0;
+    }
+   
+    #kristin-logo {
+        display: none;
+    }
+}

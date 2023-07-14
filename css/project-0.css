@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 1.5em;
+    background: white;
+    color: black;
+}
+
+
+/*Main Manu*/
+
+#main-menu {
+    background-color: white;
+    height: 70px;
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    z-index: 3;
+}
+
+#kristin-logo {
+    margin-left: 50px;
+    color: black;
+}
+
+#kristin-logo a {
+    text-decoration: none;
+    color: black;
+}
+
+#main-menu .nav-items {
+    display: flex;
+    margin-right: 50px;
+}
+
+.nav-items .current {
+    list-style-type: none;
+    margin: 20px;
+}
+
+#main-menu .nav-items a:hover {
+    text-decoration: underline;
+}
+
+#main-menu .nav-items a {
+    text-decoration: none;
+    color: black;
+}
+
+/*Buttons*/
+
+.buttons {
+    font-family: 'Montserrat', sans-serif;
+    padding: 8px 13px;
+    border-radius: 10px;
+    border: 1px solid rgb(38, 150, 255);
+    background-color: white;
+    color: black;
+    width: fit-content;
+}
+
+.buttons:hover {
+    background-color: rgb(38, 150, 255);
+    color: white;
+    cursor: pointer;
+}
+
+.buttons a {
+    color: inherit;
+    text-decoration: none;
+    font-family: inherit;
+}
+
+/*Sidebar*/
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 60px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.sidebar-text {
+    color: black;
+    transform: rotate(-90deg);
+    white-space: nowrap;
+    margin: 20px;
+}
+
+
+/*headlines*/
+
+h2 {
+    font-family: 'Audiowide', sans-serif;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+h3 {
+    font-family: 'Audiowide', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+h4 {
+    font-family: 'Audiowide', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+}
+
+h5 {
+    text-transform: capitalize;
+    font-size: 1rem;
+    text-decoration: underline;
+    margin-top: 10px;
+}
+
+/* pageheader*/
+
+#page-header {
+    overflow: hidden;
+}
+
+#header-img {
+    width: 100vw;
+    margin-top: 70px;
+    margin-left: 50px;
+}
+
+/*project-info*/
+
+#project-info {
+    margin: 100px 15%;
+}
+
+#project-info>p {
+    margin-top: 20px;
+}
+
+/*Image section*/
+
+#images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+    max-width: 70%;
+    margin-bottom: 130px;
+    margin-left: 15%;
+}
+
+#first-image {
+    width: 70%;
+}
+
+#second-image {
+    height: 250px;
+    margin-left: 20px;
+}
+
+#first-image-ljoma {
+    width: 60%;
+}
+
+#second-image-ljoma {
+    height: 250px;
+    margin-left: 20px;
+}
+
+/* Animation transition */
+.reveal {
+    width: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+@media screen and (max-width: 1000px) {
+    #second-image {
+        display: none;
+    }
+    #first-image {
+        width: 100%;
+    }
+
+    #first-image-ljoma {
+        width: 100%;
+    }
+    
+    #second-image-ljoma {
+        display: none;
+    }
+}
+
+/*Last image*/
+#last-image-wrapper {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 100px;
+}
+
+#last-image {
+    width: 85%;
+    margin-left: 15%;
+   
+}
+
+#last-image-suave {
+    width: 85%;
+    margin-left: 15%;
+}
+
+/*footer*/
+
+#page-footer {
+    display: flex;
+    justify-content: center;
+}
+
+#page-footer>div {
+    width: 70%;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.some img {
+    height: 25px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+}
+
+#back-to-top {
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: black;
+}
+
+#back-to-top:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 750px) {
+    #main-menu .nav-items {
+        width: 100%;
+        justify-content: center;
+        margin-right: 0;
+    }
+   
+    #kristin-logo {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #header-img {
+        width: 100vw;
+    }
+
+    .some img {
+        height: 20px;
+        margin-top: 2px;
+    }
+
+    #page-footer>div {
+        width: 70%;
+    }
+
+    #back-to-top {
+        font-size: smaller;
+    }
+
+    h4 {
+        font-size: 0.9rem;
+    }
+
+    .current>a {
+        font-size: 0.8rem;
+    }
+
+    .sidebar {
+        width: 50px;
+    }
+
+}

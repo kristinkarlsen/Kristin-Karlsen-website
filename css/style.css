@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 1.5em;
+    background: white;
+    color: black;
+}
+
+/*headlines*/
+
+h1 {
+    font-size: 5rem;
+    font-weight: 300;
+}
+
+h2 {
+    font-family: 'Audiowide', sans-serif;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+h3 {
+    font-family: 'Audiowide', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+h4 {
+    font-family: 'Audiowide', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+}
+
+/*Main Manu*/
+
+#main-menu {
+    background-color: transparent;
+    height: 70px;
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    z-index: 2;
+}
+
+#kristin-logo {
+    margin-left: 50px;
+    color: white;
+}
+
+#kristin-logo a {
+    text-decoration: none;
+    color: white;
+}
+
+#main-menu .nav-items {
+    display: flex;
+    margin-right: 50px;
+}
+
+.nav-items .current {
+    list-style-type: none;
+    margin: 20px;
+}
+
+#main-menu .nav-items a:hover {
+    text-decoration: underline;
+}
+
+#active-now {
+    font-weight: bold;
+}
+
+#main-menu .nav-items a {
+    text-decoration: none;
+    color: white;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    min-width: 160px;
+    z-index: 1;
+  }
+  
+  .dropdown-content button {
+    color: black;
+    padding: 8px 10px;
+    margin-top: 5px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+/* pageheader*/
+
+#page-header {
+    background-image: url("../images/Frontpage/background.png");
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#page-header #header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-text {
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    font-family: 'Bebas Neue', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+/*buttons*/
+
+.buttons {
+    font-family: 'Montserrat', sans-serif;
+    padding: 8px 13px;
+    border-radius: 10px;
+    border: 1px solid rgb(38, 150, 255);
+    background-color: white;
+    color: black;
+    width: fit-content;
+}
+
+.buttons:hover {
+    background-color: rgb(38, 150, 255);
+    color: white;
+    cursor: pointer;
+}
+
+.buttons a {
+    color: inherit;
+    text-decoration: none;
+    font-family: inherit;
+}
+
+/*about me section*/
+
+#What-can-I-do-for-you {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#desk-img-wrapper {
+    height: 500px;
+    width: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+
+#about-me-container {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin-left: 15%;
+}
+
+#info-text-wrapper {
+    width: 50%;
+    padding-left: 60px;
+}
+
+.info-text {
+    margin-bottom: 15px;
+}
+
+#desk-img {
+    height: inherit;
+}
+
+/*portfolio*/
+
+#portfolio {
+    margin-left: 15%;
+}
+
+#image-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    padding: 10px 10px 10px 0;
+}
+
+.img-wrapper {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.portfolio-image {
+    width: 100%;
+}
+
+.image-scale {
+    width: 134%;
+}
+
+
+/*Experience*/
+
+#experience {
+    margin: 150px 15%;
+}
+
+#experience-wrapper {
+    display: flex;
+    margin-top: 10px;
+    column-gap: 30px;
+}
+
+#experience2 {
+    margin-bottom: 20px;
+}
+
+/*Image section*/
+
+#geometric-image {
+    width: 85%;
+    margin-bottom: 150px;
+}
+
+/*footer*/
+
+#page-footer {
+    display: flex;
+    justify-content: center;
+}
+
+#page-footer>div {
+    width: 70%;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.some img {
+    height: 25px;
+    margin-top: 10px;
+    margin-right: 10px;
+    ;
+    margin-bottom: 50px;
+}
+
+#back-to-top {
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: black;
+}
+
+#back-to-top:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+/* Animation transition */
+.reveal {
+    width: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+@media screen and (max-width: 750px) {
+    #main-menu .nav-items {
+        width: 100%;
+        justify-content: center;
+        margin-right: 0;
+    }
+
+    #kristin-logo {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #header-img {
+        width: 100vw;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    .header-text {
+        margin-bottom: 15px;
+    }
+
+    .some img {
+        height: 20px;
+        margin-top: 2px;
+    }
+
+    #page-footer>div {
+        width: 70%;
+    }
+
+    #back-to-top {
+        font-size: smaller;
+    }
+
+    h4 {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #image-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #image-container {
+        grid-template-columns: 1fr;
+    }
+
+    #portfolio {
+        margin: 0 5%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #desk-img-wrapper {
+        display: none;
+    }
+
+    #info-text-wrapper {
+        width: 100%;
+        padding: 0 10%;
+    }
+
+    #about-me-container {
+        max-width: 100%;
+    }
+
+    #What-can-I-do-for-you {
+        height: fit-content;
+        margin: 100px 0;
+    }
+
+    #experience {
+        margin: 100px 10%;
+    }
+
+    #experience-wrapper {
+        display: block;
+    }
+
+    #experience2 {
+        margin-top: 20px;
+    }
+}
