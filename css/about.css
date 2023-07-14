@@ -247,6 +247,13 @@ position: relative;
     padding-top: 15px;
 }
 
+.small {
+    font-size: 12px;
+}
+
+.mid {
+    font-size: 14px;
+}
 
 
 /*footer*/
@@ -332,6 +339,11 @@ position: relative;
 
     .info-text-bio {
         padding-right: 0;
+    }
+
+    #resume {
+        height: auto;
+        padding: 60px 0px;
     }
 
     #resume-container {
