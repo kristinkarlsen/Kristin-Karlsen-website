@@ -321,6 +321,7 @@ position: relative;
       #biography {
         height: auto;
         padding: 60px 0px;
+        overflow: hidden;
     }
     
     #about-me-container {
@@ -344,6 +345,7 @@ position: relative;
     #resume {
         height: auto;
         padding: 60px 0px;
+        overflow: hidden;
     }
 
     #resume-container {
